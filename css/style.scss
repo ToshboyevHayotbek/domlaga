@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,800&family=Lato:ital,wght@1,900&family=Libre+Baskerville:ital@1&family=Rampart+One&family=Roboto+Slab:wght@900&family=Rowdies:wght@300&family=Shantell+Sans:ital,wght@1,800&family=Ubuntu:wght@300;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    line-height: 1.4;
+}
+body{
+    scroll-behavior: smooth;
+}
+.container{
+    max-width: 65%;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.header{
+    width: 100%;
+    background-image: url(/img/banner-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .bg__padding{
+        width: 70%;
+        margin: 0 auto;
+        padding: 2rem 2rem;
+        .navigation{
+            width: 100%;
+            margin-bottom: 10%;
+            .nav__bar{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                .logo{
+                    a{
+                        font-size: 1.9rem;
+                        text-decoration: none;
+                        color: black;
+                        font-family: Roboto Slab;
+                    }
+                }
+                .nav{
+                    width: 60%;
+                    text-align: start;
+                    a{
+                        text-decoration: none;
+                        margin-left: 1.5rem;
+                        margin-right: 1.5rem;
+                        color: black;
+                        font-size: 1rem;
+                        font-family: Roboto Slab;
+                        &:hover{
+                            color: #A7CD33;
+                            transition: 0.5s;
+                        }
+                    }
+                }
+                .bars{
+                    width: 100%;
+                    .fa-bars{
+                        display: none;
+                        cursor: pointer;
+                        line-height: 80px;
+                        margin-right: 40px;
+                        float: right;
+                    }
+                }
+            }
+        }
+        .banner__swiper{
+            width: 100%;
+            .swiper{
+                width: 100%;
+                .swiper-wrapper{
+                    width: 100%;
+                    .swiper-slide{
+                        width: 100%;
+                        .slide__item{
+                            width: 85%;
+                            margin: 0 auto;
+                            h1{
+                                font-size: 3.6rem;
+                                width: 30%;
+                                font-family: Ubuntu;
+                                margin-bottom: 1rem;
+                            }
+                            p{
+                                width: 35%;
+                                font-family: Karla;
+                                margin-bottom: 1.2rem;
+                            }
+                            .button__content{
+                                button{
+                                    padding: 1rem 2.4rem;
+                                    border-radius: 30px;
+                                    border: none;
+                                    background-color: #252424;
+                                    color: white;
+                                    cursor: pointer;
+                                }
+                                .read{
+                                    background-color: #64DAF4;
+                                    color: white;
+                                    &:hover{
+                                        background-color: #252424;
+                                        transition: 0.5s;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .swiper-scrollbar{
+                    display: none;
+                }
+                .swiper-button-prev{
+                    color: #A7CD33;
+                }
+                .swiper-button-next{
+                    color: #A7CD33;
+                }
+            }
+        }
+    }
+}
+// about
+.about{
+    width: 100%;
+    background-color: #A7CD33;
+    margin-bottom: 5%;
+    .about__content{
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        .about__item{
+            width: 100%;
+            padding: 9rem 0;
+            h2{
+                color: white;
+                font-family: Ubuntu;
+                font-size: 2.6rem;
+                margin-bottom: 1rem;
+            }
+            p{
+                color: white;
+                font-family: Karla;
+                margin-bottom: 1rem;
+            }
+            button{
+                padding: 1rem 3rem;
+                border-radius: 30px;
+                border: none;
+                background-color: #64DAF4;
+                color: white;
+            }
+        }
+        .about__img{
+            height: 100%;
+            img{
+                height: 51vh;
+            }
+        }
+    }
+}
+// comercial
+.comercial{
+    width: 100%;
+    margin-bottom: 6rem;
+    .comercial__content{
+        width: 70%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        .comercial__item{
+            width: 100%;
+            text-align: center;
+            .comercial__btn{
+                width: 300px;
+                height: 300px;
+                border-radius: 100%;
+                background-color: #A7CD33;
+                margin: 0 auto;
+                margin-bottom: 1rem;
+                h2{
+                    color: white;
+                    padding-top: 42%;
+                    font-size: 2rem;
+                    font-family: Ubuntu;
+                }
+            }
+            .comercial__title{
+                width: 100%;
+                h3{
+                    color: #252424;
+                    font-size: 1.5rem;
+                    font-family: Ubuntu;
+                }
+            }
+        }
+    }
+}
+// choose
+.choose{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 5%;
+    .choose__title{
+        text-align: center;
+        margin-bottom: 2rem;
+        h2{
+            font-size: 2.6rem;
+            font-family: Ubuntu;
+        }
+    }
+    .choose__content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        margin-bottom: 5rem;
+        button{
+            width: 80%;
+            padding: 1.4rem 0;
+            margin: 0 auto;
+            color: white;
+            background-color: #F8180D;
+            border: none;
+            cursor: pointer;
+        }
+        .but__hover{
+            background-color: #A7CD33;
+            &:hover{
+                background-color: #F8180D;
+                transition: 0.5s;
+            }
+        }
+    }
+    .button__but{
+        padding: 1rem 2rem;
+        border: none;
+        color: white;
+        margin: 0 auto;
+        background-color: #252424;
+        cursor: pointer;
+    }
+}
+// blog
+.blog{
+    width: 100%;
+    margin-bottom: 8rem;
+    .blog__title{
+        width: 100%;
+        margin-bottom: 3%;
+        h2{
+            font-family: Roboto Slab;
+            font-size: 3rem;
+        }
+    }
+    .blog__content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+        .blog__item{
+            width: 100%;
+            .date__text{
+                position: absolute;
+                background-color: #A7CD33;
+                padding: 1rem 1rem;
+                color: white;
+                font-family: Ubuntu;
+            }
+            .blog__img{
+                margin-bottom: 2rem;
+                img{
+                    width: 100%;
+                }
+            }
+            .item__title{
+                width: 100%;
+                h4{
+                    font-size: 1.2rem;
+                    font-family: Ubuntu;
+                    text-align: start;
+                    margin-bottom: 0.5rem;
+                }
+                p{
+                    font-family: Karla;
+                    font-size: 0.9rem;
+                    margin-bottom: 0.5rem;
+                }
+                button{
+                    padding: 1rem 2rem;
+                    background-color: #F8180D;
+                    border: none;
+                    color: white;
+                    cursor: pointer;
+                    font-family: Ubuntu;
+                    &:hover{
+                        background-color: #A7CD33;
+                        transition: 0.5s;
+                    }
+                }
+            }
+        }
+    }
+}
+// says
+.says{
+    width: 100%;
+    margin-bottom: 8rem;
+    .says__title{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 4rem;
+        h2{
+            font-size: 2.8rem;
+            font-family: Roboto Slab;
+            margin-top: 0.5rem;
+        }
+        p{
+            font-family: Karla;
+        }
+    }
+    .says__content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+        .says__item{
+            width: 100%;
+            .item__title{
+                border: 2px solid #A7CD33;
+                padding: 3rem 3rem;
+                border-radius: 80px;
+                margin-bottom: 1rem;
+                p{
+                    font-family: Karla;
+                }
+            }
+            h2{
+                font-family: Ubuntu;
+                font-size: 1.7rem;
+                margin-bottom: 0.5rem;
+            }
+            h3{
+                color: #A7CD33;
+                font-family: Lato;
+            }
+        }
+    }
+}
+// contact
+.contact{
+    width: 100%;
+    margin-bottom: 4rem;
+    .contact__title{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 3rem;
+        h2{
+            font-size: 2.6rem;
+            font-family: Ubuntu;
+        }
+    }
+    .contact__input{
+        width: 55%;
+        margin: 0 auto;
+        input{
+            display: block;
+            margin: 0 auto;
+            padding: 1.2rem 0;
+            width: 100%;
+            margin-bottom: 1.4rem;
+            text-indent: 10px;
+            border-radius: 10px;
+            border: 2px solid #F8180D;
+            color: #F8180D;
+            font-family: Ubuntu;
+        }
+        textarea{
+            display: block;
+            padding: 2rem 0;
+            width: 100%;
+            margin-bottom: 1.2rem;
+            text-indent: 10px;
+            border-radius: 10px;
+            border: 2px solid #F8180D;
+            color: #F8180D;
+            font-family: Ubuntu;
+        }
+        button{
+            display: block;
+            margin: 0 auto;
+            padding: 1rem 2.8rem;
+            background-color: #F8180D;
+            color: white;
+            border: 1px solid #F8180D;
+            border-radius: 10px;
+            font-family: Ubuntu;
+        }
+    }
+}
+// footer
+.footer{
+    width: 100%;
+    background-color: #252424;
+    padding: 3rem 0;
+    .footer__content{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 3rem;
+        .footer__item{
+            width: 100%;
+            color: white;
+            h2{
+                font-family: Ubuntu;
+                font-size: 1.6rem;
+                margin-bottom: 1rem;
+            }
+            p{
+                font-family: Karla;
+            }
+            a{
+                display: block;
+                color: #A7CD33;
+                text-decoration: none;
+                font-family: Roboto Slab;
+                margin-bottom: 0.5rem;
+                &:hover{
+                    color: #64DAF4;
+                    transition: 0.5s;
+                }
+            }
+            b{
+                display: block;
+                font-family: Ubuntu;
+            }
+            textarea{
+                display: block;
+                padding: 0.5rem 1rem;
+                margin-bottom: 1rem;
+                font-family: Ubuntu;
+            }
+            span{
+                font-family: Ubuntu;
+                color: #A7CD33;
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+.copyright{
+    width: 100%;
+    background-color: #252424;
+    padding: 1rem;
+    color: white;
+    text-align: center;
+    font-family: Ubuntu;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}

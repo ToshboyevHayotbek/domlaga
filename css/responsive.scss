@@ -1,0 +1,503 @@
+@media only screen and (max-width: 1200px){
+    .container{
+        max-width: 80%;
+    }
+// header
+    .header{
+        .bg__padding{
+            width: 80%;
+            .navigation{
+                margin-bottom: 8%;
+                .nav__bar{
+                    align-items: center;
+                    .logo{
+                        a{
+                            font-size: 1.7rem;
+                        }
+                    }
+                }
+            }
+            .banner__swiper{
+                .swiper{ 
+                    .swiper-wrapper{   
+                        .swiper-slide{
+                            .slide__item{
+                                width: 85%;
+                                h1{
+                                    font-size: 3.4rem;
+                                }
+                                .button__content{
+                                    button{
+                                        padding: 0.8rem 2rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+// about
+.about{
+    .about__content{
+        .about__item{
+            padding: 5rem 0;
+            h2{
+                font-size: 2.4rem;
+            }
+            p{
+                font-size: 0.9rem;
+            }
+            button{
+                padding: 0.8rem 2.6rem;
+            }
+        }
+        .about__img{
+            height: 100%;
+            img{
+                height: 50vh;                
+            }
+        }
+    }
+}
+// comercial
+.comercial{
+    .comercial__content{
+        .comercial__item{
+            .comercial__btn{
+                width: 250px;
+                height: 250px;
+            }
+        }
+    }
+}
+// choose
+.choose{
+    .choose__title{
+        h2{
+            font-size: 2.4rem;
+        }
+    }
+}
+.blog{
+    .blog__title{
+        h2{
+            font-size: 2.6rem;
+        }
+    }
+    .blog__content{
+        .blog__item{
+            .item__title{
+                width: 100%;
+                h4{
+                    font-size: 0.9rem;
+                }
+                p{
+                    font-size: 0.6rem;
+                }
+                button{
+                    padding: 0.9rem 1.8rem;
+                }
+            }
+        }
+    }
+}
+// says
+.says{
+    .says__title{
+        margin-bottom: 3rem;
+        h2{
+            font-size: 2.3rem;
+        }
+    }
+    .says__content{
+        .says__item{
+            .item__title{
+                p{
+                    font-size: 0.8rem;
+                }
+            }
+            h2{               
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+// footer
+.footer{
+    .footer__content{
+        .footer__item{
+            h2{
+                font-family: Ubuntu;
+                font-size: 1.6rem;
+                margin-bottom: 1rem;
+            }
+            p{
+                font-size: 0.8rem;
+            }
+        }
+    }
+}
+}
+@media  only screen and (max-width: 992px) {
+    .container{
+        max-width: 80%;
+    }
+    .header{
+        .bg__padding{
+            width: 90%;
+            .navigation{
+                margin-bottom: 6%;
+                .nav__bar{
+                    .logo{
+                        a{
+                            font-size: 1.5rem;
+                            text-decoration: none;
+                            color: black;
+                            font-family: Roboto Slab;
+                        }
+                    }
+                    .nav{
+                        width: 60%;
+                        a{
+                             font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+            .banner__swiper{
+                .swiper{
+                    .swiper-wrapper{
+                        .swiper-slide{
+                            .slide__item{
+                                width: 85%;
+                                h1{
+                                    font-size: 3rem;
+                                }
+                                p{
+                                    font-size: 0.8rem;
+                                }
+                                .button__content{
+                                    button{
+                                        padding: 0.8rem 2rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+// about
+.about{
+    .about__content{
+        .about__item{
+            width: 100%;
+            padding: 2rem 0;
+            h2{
+                font-size: 2.2rem;
+            }
+            p{
+                font-size: 0.9rem;
+            }
+            button{
+                padding: 1rem 2.2rem;
+            }
+        }
+        .about__img{
+            height: 100%;
+            img{
+                height: 40vh;
+            }
+        }
+    }
+}
+// comercial
+.comercial{
+    .comercial__content{
+        .comercial__item{
+            .comercial__btn{
+                width: 220px;
+                height: 220px;
+                
+            }
+            .comercial__title{
+                h3{  
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+// footer
+.footer{
+    .footer__content{
+        .footer__item{
+            h2{
+                font-family: Ubuntu;
+                font-size: 1.4rem;
+                margin-bottom: 1rem;
+            }
+            p{
+                font-size: 0.7rem;
+            }
+            a{
+                font-size: 0.8rem;
+            }
+            b{
+                font-size: 0.9rem;
+            }
+            span{
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px){
+    .container{
+        max-width: 90%;
+    }
+    .hide{
+        display: none;
+    }
+    .show{
+        display: block;
+    }
+    .header{
+        .bg__padding{
+            width: 90%;
+            padding: 0.5rem 0;
+            .navigation{
+                .nav__bar{
+                    .logo{
+                        a{
+                            font-size: 1.9rem;
+                        }
+                    }
+                    .nav{
+                        text-align: center;
+                        position: fixed;
+                        z-index: 2;
+                        width: 100%;
+                        height: 45vh;
+                        top: 90px;
+                        left: 0;
+                        background-color: #b9f0fc;
+                        padding: 2rem 0;
+                        display: none;
+                        a{
+                            display: block;
+                            font-size: 1.4rem;
+                            margin-bottom: 1.4rem;
+                        }
+                    }
+                    .bars{
+                        width: 100%;
+                        .fa-bars{
+                            display: block;
+                            cursor: pointer;
+                            line-height: 80px;
+                            margin-right: 0px;
+                            float: right;
+                            font-size: 2.4rem;
+                        }
+                    }
+                }
+            }
+            .banner__swiper{
+                .swiper{
+                    .swiper-wrapper{
+                        .swiper-slide{
+                            .slide__item{
+                                width: 85%;
+                                h1{
+                                    font-size: 3rem;
+                                    width: 50%;
+                                }
+                                p{
+                                    width: 50%;
+                                }
+                                .button__content{
+                                    button{
+                                        padding: 0.8rem 2rem;
+                                        display: block;
+                                        margin-bottom: 0.4rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// about
+.about{
+    .about__content{
+        width: 80%;
+        .about__item{
+            padding: 3rem 0;
+            h2{
+                font-size: 2rem;
+            }
+            p{
+                font-size: 0.7rem;
+            }
+            button{
+                padding: 0.8rem 2rem;
+            }
+        }
+        .about__img{
+            img{
+                height: 35vh;
+            }
+        }
+    }
+}
+// comercial
+.comercial{
+    margin-bottom: 6rem;
+    .comercial__content{
+        width: 100%;
+        .comercial__item{
+            .comercial__btn{
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+}
+// choose
+.choose{
+    .choose__title{
+        h2{
+            font-size: 2.2rem;
+        }
+    }
+}
+// blog
+.blog{
+    .blog__title{
+        h2{
+            font-size: 2.4rem;
+        }
+    }
+    .blog__content{
+        .blog__item{
+            .item__title{
+                width: 100%;
+                h4{
+                    font-size: 0.8rem;
+                }
+                p{
+                    font-size: 0.6rem;
+                    margin-bottom: 0.5rem;
+                }
+                button{
+                    padding: 0.8rem 1.4rem;
+                }
+            }
+        }
+    }
+}
+// says
+.says{
+    margin-bottom: 8rem;
+    .says__title{
+        margin-bottom: 2rem;
+        h2{
+            font-size: 2rem;
+            margin-top: 0.5rem;
+        }
+        p{
+            font-size: 0.9rem;
+        }
+    }
+    .says__content{
+        .says__item{
+            .item__title{
+                padding: 2rem 2rem;  
+                p{
+                    font-size: 0.7rem;
+                }
+            }
+            h2{              
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+// footer
+.footer{
+    .footer__content{
+        grid-template-columns: 100%;
+        .footer__item{
+            width: 60%;
+        }
+    }
+}
+// copyright
+.copyright{
+    font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,478 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,800&family=Lato:ital,wght@1,900&family=Libre+Baskerville:ital@1&family=Rampart+One&family=Roboto+Slab:wght@900&family=Rowdies:wght@300&family=Shantell+Sans:ital,wght@1,800&family=Ubuntu:wght@300;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.4;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 65%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.header {
+  width: 100%;
+  background-image: url(/img/banner-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header .bg__padding {
+  width: 70%;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+}
+.header .bg__padding .navigation {
+  width: 100%;
+  margin-bottom: 10%;
+}
+.header .bg__padding .navigation .nav__bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header .bg__padding .navigation .nav__bar .logo a {
+  font-size: 1.9rem;
+  text-decoration: none;
+  color: black;
+  font-family: Roboto Slab;
+}
+.header .bg__padding .navigation .nav__bar .nav {
+  width: 60%;
+  text-align: start;
+}
+.header .bg__padding .navigation .nav__bar .nav a {
+  text-decoration: none;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  color: black;
+  font-size: 1rem;
+  font-family: Roboto Slab;
+}
+.header .bg__padding .navigation .nav__bar .nav a:hover {
+  color: #A7CD33;
+  transition: 0.5s;
+}
+.header .bg__padding .navigation .nav__bar .bars {
+  width: 100%;
+}
+.header .bg__padding .navigation .nav__bar .bars .fa-bars {
+  display: none;
+  cursor: pointer;
+  line-height: 80px;
+  margin-right: 40px;
+  float: right;
+}
+.header .bg__padding .banner__swiper {
+  width: 100%;
+}
+.header .bg__padding .banner__swiper .swiper {
+  width: 100%;
+}
+.header .bg__padding .banner__swiper .swiper .swiper-wrapper {
+  width: 100%;
+}
+.header .bg__padding .banner__swiper .swiper .swiper-wrapper .swiper-slide {
+  width: 100%;
+}
+.header .bg__padding .banner__swiper .swiper .swiper-wrapper .swiper-slide .slide__item {
+  width: 85%;
+  margin: 0 auto;
+}
+.header .bg__padding .banner__swiper .swiper .swiper-wrapper .swiper-slide .slide__item h1 {
+  font-size: 3.6rem;
+  width: 30%;
+  font-family: Ubuntu;
+  margin-bottom: 1rem;
+}
+.header .bg__padding .banner__swiper .swiper .swiper-wrapper .swiper-slide .slide__item p {
+  width: 35%;
+  font-family: Karla;
+  margin-bottom: 1.2rem;
+}
+.header .bg__padding .banner__swiper .swiper .swiper-wrapper .swiper-slide .slide__item .button__content button {
+  padding: 1rem 2.4rem;
+  border-radius: 30px;
+  border: none;
+  background-color: #252424;
+  color: white;
+  cursor: pointer;
+}
+.header .bg__padding .banner__swiper .swiper .swiper-wrapper .swiper-slide .slide__item .button__content .read {
+  background-color: #64DAF4;
+  color: white;
+}
+.header .bg__padding .banner__swiper .swiper .swiper-wrapper .swiper-slide .slide__item .button__content .read:hover {
+  background-color: #252424;
+  transition: 0.5s;
+}
+.header .bg__padding .banner__swiper .swiper .swiper-scrollbar {
+  display: none;
+}
+.header .bg__padding .banner__swiper .swiper .swiper-button-prev {
+  color: #A7CD33;
+}
+.header .bg__padding .banner__swiper .swiper .swiper-button-next {
+  color: #A7CD33;
+}
+
+.about {
+  width: 100%;
+  background-color: #A7CD33;
+  margin-bottom: 5%;
+}
+.about .about__content {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+.about .about__content .about__item {
+  width: 100%;
+  padding: 9rem 0;
+}
+.about .about__content .about__item h2 {
+  color: white;
+  font-family: Ubuntu;
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+.about .about__content .about__item p {
+  color: white;
+  font-family: Karla;
+  margin-bottom: 1rem;
+}
+.about .about__content .about__item button {
+  padding: 1rem 3rem;
+  border-radius: 30px;
+  border: none;
+  background-color: #64DAF4;
+  color: white;
+}
+.about .about__content .about__img {
+  height: 100%;
+}
+.about .about__content .about__img img {
+  height: 51vh;
+}
+
+.comercial {
+  width: 100%;
+  margin-bottom: 6rem;
+}
+.comercial .comercial__content {
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.comercial .comercial__content .comercial__item {
+  width: 100%;
+  text-align: center;
+}
+.comercial .comercial__content .comercial__item .comercial__btn {
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  background-color: #A7CD33;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+.comercial .comercial__content .comercial__item .comercial__btn h2 {
+  color: white;
+  padding-top: 42%;
+  font-size: 2rem;
+  font-family: Ubuntu;
+}
+.comercial .comercial__content .comercial__item .comercial__title {
+  width: 100%;
+}
+.comercial .comercial__content .comercial__item .comercial__title h3 {
+  color: #252424;
+  font-size: 1.5rem;
+  font-family: Ubuntu;
+}
+
+.choose {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 5%;
+}
+.choose .choose__title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.choose .choose__title h2 {
+  font-size: 2.6rem;
+  font-family: Ubuntu;
+}
+.choose .choose__content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 5rem;
+}
+.choose .choose__content button {
+  width: 80%;
+  padding: 1.4rem 0;
+  margin: 0 auto;
+  color: white;
+  background-color: #F8180D;
+  border: none;
+  cursor: pointer;
+}
+.choose .choose__content .but__hover {
+  background-color: #A7CD33;
+}
+.choose .choose__content .but__hover:hover {
+  background-color: #F8180D;
+  transition: 0.5s;
+}
+.choose .button__but {
+  padding: 1rem 2rem;
+  border: none;
+  color: white;
+  margin: 0 auto;
+  background-color: #252424;
+  cursor: pointer;
+}
+
+.blog {
+  width: 100%;
+  margin-bottom: 8rem;
+}
+.blog .blog__title {
+  width: 100%;
+  margin-bottom: 3%;
+}
+.blog .blog__title h2 {
+  font-family: Roboto Slab;
+  font-size: 3rem;
+}
+.blog .blog__content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+.blog .blog__content .blog__item {
+  width: 100%;
+}
+.blog .blog__content .blog__item .date__text {
+  position: absolute;
+  background-color: #A7CD33;
+  padding: 1rem 1rem;
+  color: white;
+  font-family: Ubuntu;
+}
+.blog .blog__content .blog__item .blog__img {
+  margin-bottom: 2rem;
+}
+.blog .blog__content .blog__item .blog__img img {
+  width: 100%;
+}
+.blog .blog__content .blog__item .item__title {
+  width: 100%;
+}
+.blog .blog__content .blog__item .item__title h4 {
+  font-size: 1.2rem;
+  font-family: Ubuntu;
+  text-align: start;
+  margin-bottom: 0.5rem;
+}
+.blog .blog__content .blog__item .item__title p {
+  font-family: Karla;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+.blog .blog__content .blog__item .item__title button {
+  padding: 1rem 2rem;
+  background-color: #F8180D;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-family: Ubuntu;
+}
+.blog .blog__content .blog__item .item__title button:hover {
+  background-color: #A7CD33;
+  transition: 0.5s;
+}
+
+.says {
+  width: 100%;
+  margin-bottom: 8rem;
+}
+.says .says__title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.says .says__title h2 {
+  font-size: 2.8rem;
+  font-family: Roboto Slab;
+  margin-top: 0.5rem;
+}
+.says .says__title p {
+  font-family: Karla;
+}
+.says .says__content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+.says .says__content .says__item {
+  width: 100%;
+}
+.says .says__content .says__item .item__title {
+  border: 2px solid #A7CD33;
+  padding: 3rem 3rem;
+  border-radius: 80px;
+  margin-bottom: 1rem;
+}
+.says .says__content .says__item .item__title p {
+  font-family: Karla;
+}
+.says .says__content .says__item h2 {
+  font-family: Ubuntu;
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+}
+.says .says__content .says__item h3 {
+  color: #A7CD33;
+  font-family: Lato;
+}
+
+.contact {
+  width: 100%;
+  margin-bottom: 4rem;
+}
+.contact .contact__title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.contact .contact__title h2 {
+  font-size: 2.6rem;
+  font-family: Ubuntu;
+}
+.contact .contact__input {
+  width: 55%;
+  margin: 0 auto;
+}
+.contact .contact__input input {
+  display: block;
+  margin: 0 auto;
+  padding: 1.2rem 0;
+  width: 100%;
+  margin-bottom: 1.4rem;
+  text-indent: 10px;
+  border-radius: 10px;
+  border: 2px solid #F8180D;
+  color: #F8180D;
+  font-family: Ubuntu;
+}
+.contact .contact__input textarea {
+  display: block;
+  padding: 2rem 0;
+  width: 100%;
+  margin-bottom: 1.2rem;
+  text-indent: 10px;
+  border-radius: 10px;
+  border: 2px solid #F8180D;
+  color: #F8180D;
+  font-family: Ubuntu;
+}
+.contact .contact__input button {
+  display: block;
+  margin: 0 auto;
+  padding: 1rem 2.8rem;
+  background-color: #F8180D;
+  color: white;
+  border: 1px solid #F8180D;
+  border-radius: 10px;
+  font-family: Ubuntu;
+}
+
+.footer {
+  width: 100%;
+  background-color: #252424;
+  padding: 3rem 0;
+}
+.footer .footer__content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+.footer .footer__content .footer__item {
+  width: 100%;
+  color: white;
+}
+.footer .footer__content .footer__item h2 {
+  font-family: Ubuntu;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+.footer .footer__content .footer__item p {
+  font-family: Karla;
+}
+.footer .footer__content .footer__item a {
+  display: block;
+  color: #A7CD33;
+  text-decoration: none;
+  font-family: Roboto Slab;
+  margin-bottom: 0.5rem;
+}
+.footer .footer__content .footer__item a:hover {
+  color: #64DAF4;
+  transition: 0.5s;
+}
+.footer .footer__content .footer__item b {
+  display: block;
+  font-family: Ubuntu;
+}
+.footer .footer__content .footer__item textarea {
+  display: block;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  font-family: Ubuntu;
+}
+.footer .footer__content .footer__item span {
+  font-family: Ubuntu;
+  color: #A7CD33;
+  font-size: 1.4rem;
+}
+
+.copyright {
+  width: 100%;
+  background-color: #252424;
+  padding: 1rem;
+  color: white;
+  text-align: center;
+  font-family: Ubuntu;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}/*# sourceMappingURL=style.css.map */
