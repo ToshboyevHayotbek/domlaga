@@ -59,16 +59,13 @@ img{
                         }
                     }
                 }
-                .bars{
-                    width: 100%;
-                    .fa-bars{
-                        display: none;
-                        cursor: pointer;
-                        line-height: 80px;
-                        margin-right: 40px;
-                        float: right;
-                    }
-                }
+                .fa-bars{
+                    display: none;
+                    cursor: pointer;
+                    line-height: 80px;
+                    margin-right: 40px;
+                    float: right;
+               }
             }
         }
         .banner__swiper{

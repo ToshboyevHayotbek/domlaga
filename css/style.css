@@ -66,10 +66,7 @@ img {
   color: #A7CD33;
   transition: 0.5s;
 }
-.header .bg__padding .navigation .nav__bar .bars {
-  width: 100%;
-}
-.header .bg__padding .navigation .nav__bar .bars .fa-bars {
+.header .bg__padding .navigation .nav__bar .fa-bars {
   display: none;
   cursor: pointer;
   line-height: 80px;
