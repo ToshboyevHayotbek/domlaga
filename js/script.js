@@ -1,37 +1,43 @@
 window.addEventListener('DOMContentLoaded', () =>{
   
   const btn = document.querySelector(".fa-bars"),
-      nav = document.querySelector(".nav")
-      navBar = document.querySelector(".nav__bar")
-
+      nav = document.querySelector(".nav"),
+      navItem = document.querySelectorAll(".nav a");
       btn.addEventListener('click', () => {
-          nav.classList.add('show');
-          nav.classList.remove('hide');
-          console.log(7)
+          if(nav.classList.contains('show')){
+            nav.classList.remove('show');
+            nav.classList.add('hide');
+          }
+          else{
+            nav.classList.add('show');
+            nav.classList.remove('hide');
+          }
+          
       });
 
-      navBar.addEventListener('click', (e) =>{
+      nav.addEventListener('click', (e) =>{
         e.target;
-        nav.forEach((item) =>{
+        navItem.forEach((item) =>{
           if(e.target == item){
             setTimeout(() =>{
-              navBar.classList.add('hide');
-              navBar.classList.remove('show');
-            }, 5000)
+              nav.classList.add('hide');
+              nav.classList.remove('show');
+            }, 500)
           }
         })
       })
-    
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+    const loader = document.querySelector('.loader');
+
+  setTimeout(() => {
+    loader.style.opacity = 0.5;
+  }, 2700);
+  setTimeout(() => {
+    loader.style.display = 'none';
+  }, 3000)
+
+
   const swiper = new Swiper('.swiper', {
     // Optional parameters
     loop: true,

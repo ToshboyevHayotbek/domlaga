@@ -17,7 +17,29 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 </head>
 <body>
-    <header class="header">
+    <!-- loader -->
+    <div class="loader">
+        <div class="loader-inner">
+          <div class="loader-line-wrap">
+            <div class="loader-line"></div>
+          </div>
+          <div class="loader-line-wrap">
+            <div class="loader-line"></div>
+          </div>
+          <div class="loader-line-wrap">
+            <div class="loader-line"></div>
+          </div>
+          <div class="loader-line-wrap">
+            <div class="loader-line"></div>
+          </div>
+          <div class="loader-line-wrap">
+            <div class="loader-line"></div>
+          </div>
+        </div>
+      </div>
+
+    <!-- header -->
+    <header class="header" id="home">
         <div class="bg__padding">
             <div class="navigation">
                 <div class="nav__bar">
@@ -25,11 +47,11 @@
                         <a href="#">Schoollang</a>
                     </div>
                     <div class="nav">
-                        <a href="#">Home</a>
-                        <a href="#">About</a>
-                        <a href="#">Services</a>
-                        <a href="#">Blog</a>
-                        <a href="#">Contact Us</a>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#comercial">Services</a>
+                        <a href="#blog">Blog</a>
+                        <a href="#contact">Contact Us</a>
                     </div>      
                         <i class="fa-solid fa-bars"></i>
                 </div>
@@ -88,7 +110,7 @@
         </div>
 </header>
 <!-- about -->
-<div class="about">
+<div class="about" id="about">
     <div class="about__content">
         <div class="about__item">
             <h2>About Agency</h2>
@@ -101,7 +123,7 @@
     </div>
 </div>
 <!-- comercial -->
-<div class="comercial">
+<div class="comercial" id="comercial">
     <div class="comercial__content">
         <!-- 1 -->
         <div class="comercial__item">
@@ -150,7 +172,7 @@
     </div>
 </div>
 <!-- blog -->
-<div class="blog">
+<div class="blog" id="blog">
     <div class="container">
         <div class="blog__title">
             <h2>Our Blog</h2>
@@ -221,7 +243,7 @@
     </div>
 </div>
 <!-- contact -->
-<div class="contact">
+<div class="contact" id="conact">
     <div class="container">
         <div class="contact__title">
             <h2>Get in touch</h2>
@@ -280,11 +302,6 @@
         </div>
     </div>
 </div>
-
-
-
-
-
 
     <script src="/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
